@@ -2,7 +2,22 @@
 
 //Complete this algo
 const isLoop = (linkedlist) => {
+    const values = new Set()
+    let current = linkedlist.head
+    // let truthy = false
 
+    while (current.next !== null) {
+        if (values.has(current)) {
+            // truthy = true
+            return true
+        } else {
+            values.add(current)
+        }
+
+        current = current.next
+    }
+
+    return false
 };
 
 
