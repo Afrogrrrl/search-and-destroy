@@ -7,7 +7,6 @@ const binarySearch = (array, target) => {
 	let midpoint = Math.floor((tail + head) / 2)
 
 	while (tail >= head) {
-		console.log("head", head, "tail", tail, "midpoint", midpoint, "target", target, "value", array[midpoint])
 		if (array[midpoint] === target) {
 			return true
 		} else if (array[midpoint] > target) {
